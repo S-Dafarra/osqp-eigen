@@ -1,0 +1,377 @@
+\section{O\+S\+Q\+P\+Wrapper\+:\+:Optimizer\+Solver Class Reference}
+\label{classOSQPWrapper_1_1OptimizerSolver}\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+
+
+\hyperlink{classOSQPWrapper_1_1OptimizerSolver}{Optimizer\+Solver} class is a wrapper of the O\+S\+QP O\+S\+Q\+P\+Workspace struct.  
+
+
+
+
+{\ttfamily \#include $<$Optimizer\+Solver.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerSolver_a6f2aa34afc3a1938212c5093c47e6c22}{Optimizer\+Solver} ()\label{classOSQPWrapper_1_1OptimizerSolver_a6f2aa34afc3a1938212c5093c47e6c22}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerSolver_ac38954bee1775723f24ecabf66c8fe93}{$\sim$\+Optimizer\+Solver} ()\label{classOSQPWrapper_1_1OptimizerSolver_ac38954bee1775723f24ecabf66c8fe93}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a33cb56b89b2cd0f8a7cbb211ea63616b}{init\+Solver} ()
+\begin{DoxyCompactList}\small\item\em Initialize the solver with the actual initial data and settings. \end{DoxyCompactList}\item 
+bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a9efa22396dbc284bb6dece9225ccd693}{is\+Initialized} ()
+\begin{DoxyCompactList}\small\item\em Check if the solver is initialized. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a6bdb7f0951df8363180b717283c64c99}{clear\+Solver} ()\label{classOSQPWrapper_1_1OptimizerSolver_a6bdb7f0951df8363180b717283c64c99}
+
+\begin{DoxyCompactList}\small\item\em Dealocate memory. \end{DoxyCompactList}\item 
+bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_af1d220b7e0b2154f1f40541ee05f6c0a}{clear\+Solver\+Variables} ()
+\begin{DoxyCompactList}\small\item\em Set to zero all the solver variables. \end{DoxyCompactList}\item 
+bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a00d758275679a54d0ad0be31a8e244b2}{solve} ()
+\begin{DoxyCompactList}\small\item\em Solve the QP optimization problem. \end{DoxyCompactList}\item 
+Eigen\+::\+Vector\+Xd \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a5427ac88e17f993231400660837c2db1}{get\+Solution} ()
+\begin{DoxyCompactList}\small\item\em Get the optimization problem solution. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int n$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a075b3b0f98fb9ff5b3924a3b00b58913}{update\+Gradient} (Eigen\+::\+Matrix$<$ c\+\_\+float, n, 1 $>$ \&gradient)
+\begin{DoxyCompactList}\small\item\em Update the linear part of the cost function (Gradient). \end{DoxyCompactList}\item 
+{\footnotesize template$<$int m$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a414284af643a95340616a1024cd0f2de}{update\+Lower\+Bound} (Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&lower\+Bound)
+\begin{DoxyCompactList}\small\item\em Update the lower bounds limit (size m). \end{DoxyCompactList}\item 
+{\footnotesize template$<$int m$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a41d267f5a7c13a7c9caa9b0be4370fcf}{update\+Upper\+Bound} (Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&upper\+Bound)
+\begin{DoxyCompactList}\small\item\em Update the upper bounds limit (size m). \end{DoxyCompactList}\item 
+{\footnotesize template$<$int m$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a3934859f7cbfa10587ae81c6f0bfd436}{update\+Bounds} (Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&lower\+Bound, Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&upper\+Bound)
+\begin{DoxyCompactList}\small\item\em Update both upper and lower bounds (size m). \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_addbbf25bcb77fcf584a74e6959a0cd29}{update\+Hessian\+Matrix} (const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&hessian\+Matrix)
+\begin{DoxyCompactList}\small\item\em Update the quadratic part of the cost function (Hessian). \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a244a853420a4e758d8a37eae7852ea98}{update\+Linear\+Constraints\+Matrix} (const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&linear\+Constraints\+Matrix)
+\begin{DoxyCompactList}\small\item\em Update the linear constraints matrix (A) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , int n, int m$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a813204380e8097520e9dd9ada1d50d44}{set\+Warm\+Start} (const Eigen\+::\+Matrix$<$ T, n, 1 $>$ \&primal\+Variable, const Eigen\+::\+Matrix$<$ T, m, 1 $>$ \&dual\+Variable)
+\begin{DoxyCompactList}\small\item\em Set the entire. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , int n$>$ }\\bool {\bfseries set\+Primal\+Variable} (const Eigen\+::\+Matrix$<$ T, n, 1 $>$ \&primal\+Variable)\label{classOSQPWrapper_1_1OptimizerSolver_aa6c3e97c704e4b7177bc76e1f4eb35fd}
+
+\item 
+{\footnotesize template$<$typename T , int m$>$ }\\bool {\bfseries set\+Dual\+Variable} (const Eigen\+::\+Matrix$<$ T, m, 1 $>$ \&dual\+Variable)\label{classOSQPWrapper_1_1OptimizerSolver_a244c8be9b6b1e4f47d5441253143fb2c}
+
+\item 
+{\footnotesize template$<$typename T , int n$>$ }\\bool {\bfseries get\+Primal\+Variable} (Eigen\+::\+Matrix$<$ T, n, 1 $>$ \&primal\+Variable)\label{classOSQPWrapper_1_1OptimizerSolver_a324e247b470855c6a129d64f947ae2d0}
+
+\item 
+{\footnotesize template$<$typename T , int m$>$ }\\bool {\bfseries get\+Dual\+Variable} (Eigen\+::\+Matrix$<$ T, m, 1 $>$ \&dual\+Variable)\label{classOSQPWrapper_1_1OptimizerSolver_adbfa3843773556a7b49e8c1a8ec9b5cb}
+
+\item 
+const std\+::unique\+\_\+ptr$<$ \hyperlink{classOSQPWrapper_1_1OptimizerSettings}{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings} $>$ \& \hyperlink{classOSQPWrapper_1_1OptimizerSolver_ad931c28048f70a530ceabccc41a17a06}{settings} () const 
+\begin{DoxyCompactList}\small\item\em Get the solver settings pointer. \end{DoxyCompactList}\item 
+const std\+::unique\+\_\+ptr$<$ \hyperlink{classOSQPWrapper_1_1OptimizerData}{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data} $>$ \& \hyperlink{classOSQPWrapper_1_1OptimizerSolver_a672aaa363a5b8602e6e99f760e9b2ce4}{data} () const 
+\begin{DoxyCompactList}\small\item\em Get the pointer to the solver initial data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classOSQPWrapper_1_1OptimizerSolver}{Optimizer\+Solver} class is a wrapper of the O\+S\+QP O\+S\+Q\+P\+Workspace struct. 
+
+Definition at line 32 of file Optimizer\+Solver.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!clear\+Solver\+Variables@{clear\+Solver\+Variables}}
+\index{clear\+Solver\+Variables@{clear\+Solver\+Variables}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{clear\+Solver\+Variables()}{clearSolverVariables()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::clear\+Solver\+Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_af1d220b7e0b2154f1f40541ee05f6c0a}
+
+
+Set to zero all the solver variables. 
+
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!data@{data}}
+\index{data@{data}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{data() const }{data() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::unique\+\_\+ptr$<$ {\bf O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data} $>$ \& O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classOSQPWrapper_1_1OptimizerSolver_a672aaa363a5b8602e6e99f760e9b2ce4}
+
+
+Get the pointer to the solver initial data. 
+
+\begin{DoxyReturn}{Returns}
+the pointer to \hyperlink{classOSQPWrapper_1_1OptimizerData}{Optimizer\+Data} object. 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!get\+Solution@{get\+Solution}}
+\index{get\+Solution@{get\+Solution}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{get\+Solution()}{getSolution()}}]{\setlength{\rightskip}{0pt plus 5cm}Eigen\+::\+Vector\+Xd O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::get\+Solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a5427ac88e17f993231400660837c2db1}
+
+
+Get the optimization problem solution. 
+
+\begin{DoxyReturn}{Returns}
+an Eigen\+::\+Vector contating the optimization result. 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!init\+Solver@{init\+Solver}}
+\index{init\+Solver@{init\+Solver}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{init\+Solver()}{initSolver()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::init\+Solver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a33cb56b89b2cd0f8a7cbb211ea63616b}
+
+
+Initialize the solver with the actual initial data and settings. 
+
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!is\+Initialized@{is\+Initialized}}
+\index{is\+Initialized@{is\+Initialized}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{is\+Initialized()}{isInitialized()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::is\+Initialized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a9efa22396dbc284bb6dece9225ccd693}
+
+
+Check if the solver is initialized. 
+
+\begin{DoxyReturn}{Returns}
+true if the solver is initialized. 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!settings@{settings}}
+\index{settings@{settings}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{settings() const }{settings() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::unique\+\_\+ptr$<$ {\bf O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings} $>$ \& O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classOSQPWrapper_1_1OptimizerSolver_ad931c28048f70a530ceabccc41a17a06}
+
+
+Get the solver settings pointer. 
+
+\begin{DoxyReturn}{Returns}
+the pointer to \hyperlink{classOSQPWrapper_1_1OptimizerSettings}{Optimizer\+Settings} object. 
+\end{DoxyReturn}
+
+
+Definition at line 145 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!set\+Warm\+Start@{set\+Warm\+Start}}
+\index{set\+Warm\+Start@{set\+Warm\+Start}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{set\+Warm\+Start(const Eigen\+::\+Matrix$<$ T, n, 1 $>$ \&primal\+Variable, const Eigen\+::\+Matrix$<$ T, m, 1 $>$ \&dual\+Variable)}{setWarmStart(const Eigen::Matrix< T, n, 1 > &primalVariable, const Eigen::Matrix< T, m, 1 > &dualVariable)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , int n, int m$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::set\+Warm\+Start (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Matrix$<$ T, n, 1 $>$ \&}]{primal\+Variable, }
+\item[{const Eigen\+::\+Matrix$<$ T, m, 1 $>$ \&}]{dual\+Variable}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a813204380e8097520e9dd9ada1d50d44}
+
+
+Set the entire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+Constraints\+Matrix} & is the linear constraint matrix A \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 309 of file Optimizer\+Solver.\+hpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!solve@{solve}}
+\index{solve@{solve}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{solve()}{solve()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a00d758275679a54d0ad0be31a8e244b2}
+
+
+Solve the QP optimization problem. 
+
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Optimizer\+Solver.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!update\+Bounds@{update\+Bounds}}
+\index{update\+Bounds@{update\+Bounds}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{update\+Bounds(\+Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&lower\+Bound, Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&upper\+Bound)}{updateBounds(Eigen::Matrix< c_float, m, 1 > &lowerBound, Eigen::Matrix< c_float, m, 1 > &upperBound)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int m$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::update\+Bounds (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&}]{lower\+Bound, }
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&}]{upper\+Bound}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a3934859f7cbfa10587ae81c6f0bfd436}
+
+
+Update both upper and lower bounds (size m). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\+Bound} & is the lower bound constraint vector; \\
+\hline
+{\em upper\+Bound} & is the upper bound constraint vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file Optimizer\+Solver.\+hpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!update\+Gradient@{update\+Gradient}}
+\index{update\+Gradient@{update\+Gradient}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{update\+Gradient(\+Eigen\+::\+Matrix$<$ c\+\_\+float, n, 1 $>$ \&gradient)}{updateGradient(Eigen::Matrix< c_float, n, 1 > &gradient)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::update\+Gradient (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, n, 1 $>$ \&}]{gradient}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a075b3b0f98fb9ff5b3924a3b00b58913}
+
+
+Update the linear part of the cost function (Gradient). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gradient} & is the Gradient vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Optimizer\+Solver.\+hpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!update\+Hessian\+Matrix@{update\+Hessian\+Matrix}}
+\index{update\+Hessian\+Matrix@{update\+Hessian\+Matrix}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{update\+Hessian\+Matrix(const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&hessian\+Matrix)}{updateHessianMatrix(const Eigen::SparseMatrix< T > &hessianMatrix)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::update\+Hessian\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&}]{hessian\+Matrix}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_addbbf25bcb77fcf584a74e6959a0cd29}
+
+
+Update the quadratic part of the cost function (Hessian). 
+
+It is assumed to be a simmetric matrix. \begin{DoxyNote}{Note}
+If the sparsity pattern is preserved the matrix is simply update otherwise the entire solver will be reinitialized. In this case the primal and dual variable are copied in the new workspace.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em hessian} & is the Hessian matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Optimizer\+Solver.\+hpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!update\+Linear\+Constraints\+Matrix@{update\+Linear\+Constraints\+Matrix}}
+\index{update\+Linear\+Constraints\+Matrix@{update\+Linear\+Constraints\+Matrix}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{update\+Linear\+Constraints\+Matrix(const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&linear\+Constraints\+Matrix)}{updateLinearConstraintsMatrix(const Eigen::SparseMatrix< T > &linearConstraintsMatrix)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::update\+Linear\+Constraints\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&}]{linear\+Constraints\+Matrix}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a244a853420a4e758d8a37eae7852ea98}
+
+
+Update the linear constraints matrix (A) 
+
+\begin{DoxyNote}{Note}
+If the sparsity pattern is preserved the matrix is simply update otherwise the entire solver will be reinitialized. In this case the primal and dual variable are copied in the new workspace.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+Constraints\+Matrix} & is the linear constraint matrix A \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 204 of file Optimizer\+Solver.\+hpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!update\+Lower\+Bound@{update\+Lower\+Bound}}
+\index{update\+Lower\+Bound@{update\+Lower\+Bound}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{update\+Lower\+Bound(\+Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&lower\+Bound)}{updateLowerBound(Eigen::Matrix< c_float, m, 1 > &lowerBound)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int m$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::update\+Lower\+Bound (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&}]{lower\+Bound}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a414284af643a95340616a1024cd0f2de}
+
+
+Update the lower bounds limit (size m). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\+Bound} & is the lower bound constraint vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Optimizer\+Solver.\+hpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}!update\+Upper\+Bound@{update\+Upper\+Bound}}
+\index{update\+Upper\+Bound@{update\+Upper\+Bound}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver}}
+\subsubsection[{\texorpdfstring{update\+Upper\+Bound(\+Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&upper\+Bound)}{updateUpperBound(Eigen::Matrix< c_float, m, 1 > &upperBound)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int m$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Solver\+::update\+Upper\+Bound (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&}]{upper\+Bound}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSolver_a41d267f5a7c13a7c9caa9b0be4370fcf}
+
+
+Update the upper bounds limit (size m). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upper\+Bound} & is the upper bound constraint vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file Optimizer\+Solver.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{OptimizerSolver_8hpp}{Optimizer\+Solver.\+hpp}\item 
+\hyperlink{OptimizerSolver_8cpp}{Optimizer\+Solver.\+cpp}\item 
+\hyperlink{OptimizerSolver_8tpp}{Optimizer\+Solver.\+tpp}\end{DoxyCompactItemize}

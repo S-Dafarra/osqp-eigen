@@ -1,0 +1,501 @@
+\section{O\+S\+Q\+P\+Wrapper\+:\+:Optimizer\+Settings Class Reference}
+\label{classOSQPWrapper_1_1OptimizerSettings}\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+
+
+\hyperlink{classOSQPWrapper_1_1OptimizerSettings}{Optimizer\+Settings} class is a wrapper of the O\+S\+QP O\+S\+Q\+P\+Settings struct.  
+
+
+
+
+{\ttfamily \#include $<$Optimizer\+Settings.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerSettings_ae2d575dd9f9d9a901b952cadc5ba45ae}{Optimizer\+Settings} ()\label{classOSQPWrapper_1_1OptimizerSettings_ae2d575dd9f9d9a901b952cadc5ba45ae}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerSettings_a5e6b673f2e428b98380d775219c7de55}{$\sim$\+Optimizer\+Settings} ()\label{classOSQPWrapper_1_1OptimizerSettings_a5e6b673f2e428b98380d775219c7de55}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a651648560d599668379a4864b9bf0eed}{reset\+Default\+Settings} ()\label{classOSQPWrapper_1_1OptimizerSettings_a651648560d599668379a4864b9bf0eed}
+
+\begin{DoxyCompactList}\small\item\em Reset the default settings for the optimization problem. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_acf6b69c1ea0033a2e34ddc919224d875}{set\+Rho} (const double rho)
+\begin{DoxyCompactList}\small\item\em Set the A\+D\+MM step rho. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_abd3ee47898bda12e35cfd86deea63559}{set\+Sigma} (const double sigma)
+\begin{DoxyCompactList}\small\item\em Set the A\+D\+MM step sigma. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a44817e949ec8cd19050560240783ab8c}{set\+Scaling} (const int scaling)
+\begin{DoxyCompactList}\small\item\em Set the heuristic data scaling iterations. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_aae418d419de486492833c441dc5aef94}{set\+Adaptive\+Rho} (const bool is\+Rho\+Step\+Size\+Adactive)
+\begin{DoxyCompactList}\small\item\em Set if the rho step size adaptive feature is active. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_adeeabf389793a6dd70a7cebb540a0fe7}{set\+Adaptive\+Rho\+Interval} (const int rho\+Interval)
+\begin{DoxyCompactList}\small\item\em Set the number of iterations between rho adaptations rho. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a22e454dea4b916c7c8fe71af59779953}{set\+Adaptive\+Rho\+Tolerance} (const double adaptive\+Rho\+Tolerance)
+\begin{DoxyCompactList}\small\item\em Set the tolerance for adapting rho. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a3efdf76b1fea422452156d9a44db7479}{set\+Adaptive\+Rho\+Fraction} (const double adaptive\+Rho\+Fraction)
+\begin{DoxyCompactList}\small\item\em Set the interval for adapting rho (fraction of the setup time). \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a0cc53fc78b45b6608f88e277c6564b65}{set\+Max\+Iteraction} (const int max\+Iteration)
+\begin{DoxyCompactList}\small\item\em Set the max number of iterations. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a086a20d40655abefacd9ec4e8ca9f8cd}{set\+Absolute\+Tolerance} (const double absolute\+Tolerance)
+\begin{DoxyCompactList}\small\item\em Set the absolute convergence tolerance. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a285d31d375d498ab27e6888997e42b88}{set\+Relative\+Tolerance} (const double relative\+Tolerance)
+\begin{DoxyCompactList}\small\item\em Set the relative convergence tolerance. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a687099f54953ad7e52e56e5958cc437d}{set\+Primal\+Infeasibility\+Tollerance} (const double primal\+Infeasibility\+Tollerance)
+\begin{DoxyCompactList}\small\item\em Set the primal infeasibility tolerance. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a943057aa80b523623ae6a38c50bbe7e5}{set\+Dual\+Infeasibility\+Tollerance} (const double dual\+Infeasibility\+Tollerance)
+\begin{DoxyCompactList}\small\item\em Set the dual infeasibility tolerance. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a47cb482b8cdf4434d36f3958da65d70b}{set\+Alpha} (const double alpha)
+\begin{DoxyCompactList}\small\item\em Set the relaxation parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_addda3f07a042e3f472195d5f7198cf9c}{set\+Delta} (const double delta)
+\begin{DoxyCompactList}\small\item\em Set the relaxation parameter for polish. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a779bf46ff9b22070b12e4a1f07fee6c8}{set\+Polish} (const bool polish)
+\begin{DoxyCompactList}\small\item\em Set if the polish feature is active. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a563ceb07445f6708a9ae2c2db20c41c4}{set\+Polish\+Refine\+Iter} (const int polish\+Refine\+Iter)
+\begin{DoxyCompactList}\small\item\em Set the iterative refinement steps in polish. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_ad063e2a491c3506ea3023a3734ad2d45}{set\+Verbosity} (const bool is\+Verbose)
+\begin{DoxyCompactList}\small\item\em Set the Verbose mode. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_ab34796bbbdbd5a6ecb29517389156914}{set\+Scaled\+Terimination} (const bool scaled\+Termination)
+\begin{DoxyCompactList}\small\item\em Set the scaled termination criteria. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_ae227a4107d7475116ce236fa08b99aca}{set\+Check\+Termination} (const int check\+Termination)
+\begin{DoxyCompactList}\small\item\em Set check termination interval. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a3c9d45eb961e366d8012e467f3b81de4}{set\+Warm\+Start} (const bool warm\+Start)
+\begin{DoxyCompactList}\small\item\em Set warm start. \end{DoxyCompactList}\item 
+O\+S\+Q\+P\+Settings $\ast$const \& \hyperlink{classOSQPWrapper_1_1OptimizerSettings_a93a2d76804446a65044de78bdb6e8d32}{get\+Optimizer\+Settings} () const 
+\begin{DoxyCompactList}\small\item\em Get a pointer to \hyperlink{classOSQPWrapper_1_1OptimizerSettings}{Optimizer\+Settings} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classOSQPWrapper_1_1OptimizerSettings}{Optimizer\+Settings} class is a wrapper of the O\+S\+QP O\+S\+Q\+P\+Settings struct. 
+
+All the setter methods refer to this particular kind of optimizer. \href{http://web.stanford.edu/~boyd/admm.html}{\tt Here} you can find further information. 
+
+Definition at line 25 of file Optimizer\+Settings.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!get\+Optimizer\+Settings@{get\+Optimizer\+Settings}}
+\index{get\+Optimizer\+Settings@{get\+Optimizer\+Settings}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{get\+Optimizer\+Settings() const }{getOptimizerSettings() const }}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+Q\+P\+Settings $\ast$const \& O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::get\+Optimizer\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classOSQPWrapper_1_1OptimizerSettings_a93a2d76804446a65044de78bdb6e8d32}
+
+
+Get a pointer to \hyperlink{classOSQPWrapper_1_1OptimizerSettings}{Optimizer\+Settings} struct. 
+
+\begin{DoxyReturn}{Returns}
+a const pointer to O\+S\+Q\+P\+Settings struct. 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Absolute\+Tolerance@{set\+Absolute\+Tolerance}}
+\index{set\+Absolute\+Tolerance@{set\+Absolute\+Tolerance}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Absolute\+Tolerance(const double absolute\+Tolerance)}{setAbsoluteTolerance(const double absoluteTolerance)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Absolute\+Tolerance (
+\begin{DoxyParamCaption}
+\item[{const double}]{absolute\+Tolerance}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a086a20d40655abefacd9ec4e8ca9f8cd}
+
+
+Set the absolute convergence tolerance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em absolute\+Tolerance} & absoulte tolerance of the solver. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Adaptive\+Rho@{set\+Adaptive\+Rho}}
+\index{set\+Adaptive\+Rho@{set\+Adaptive\+Rho}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Adaptive\+Rho(const bool is\+Rho\+Step\+Size\+Adactive)}{setAdaptiveRho(const bool isRhoStepSizeAdactive)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Adaptive\+Rho (
+\begin{DoxyParamCaption}
+\item[{const bool}]{is\+Rho\+Step\+Size\+Adactive}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_aae418d419de486492833c441dc5aef94}
+
+
+Set if the rho step size adaptive feature is active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Rho\+Step\+Size\+Adactive} & if True the feature is active. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Adaptive\+Rho\+Fraction@{set\+Adaptive\+Rho\+Fraction}}
+\index{set\+Adaptive\+Rho\+Fraction@{set\+Adaptive\+Rho\+Fraction}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Adaptive\+Rho\+Fraction(const double adaptive\+Rho\+Fraction)}{setAdaptiveRhoFraction(const double adaptiveRhoFraction)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Adaptive\+Rho\+Fraction (
+\begin{DoxyParamCaption}
+\item[{const double}]{adaptive\+Rho\+Fraction}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a3efdf76b1fea422452156d9a44db7479}
+
+
+Set the interval for adapting rho (fraction of the setup time). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adaptive\+Rho\+Fraction} & interval of the adapting rho. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Adaptive\+Rho\+Interval@{set\+Adaptive\+Rho\+Interval}}
+\index{set\+Adaptive\+Rho\+Interval@{set\+Adaptive\+Rho\+Interval}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Adaptive\+Rho\+Interval(const int rho\+Interval)}{setAdaptiveRhoInterval(const int rhoInterval)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Adaptive\+Rho\+Interval (
+\begin{DoxyParamCaption}
+\item[{const int}]{rho\+Interval}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_adeeabf389793a6dd70a7cebb540a0fe7}
+
+
+Set the number of iterations between rho adaptations rho. 
+
+If 0, it is automatic. 
+\begin{DoxyParams}{Parameters}
+{\em rho\+Interval} & number of iterations. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Adaptive\+Rho\+Tolerance@{set\+Adaptive\+Rho\+Tolerance}}
+\index{set\+Adaptive\+Rho\+Tolerance@{set\+Adaptive\+Rho\+Tolerance}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Adaptive\+Rho\+Tolerance(const double adaptive\+Rho\+Tolerance)}{setAdaptiveRhoTolerance(const double adaptiveRhoTolerance)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Adaptive\+Rho\+Tolerance (
+\begin{DoxyParamCaption}
+\item[{const double}]{adaptive\+Rho\+Tolerance}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a22e454dea4b916c7c8fe71af59779953}
+
+
+Set the tolerance for adapting rho. 
+
+The new rho has to be X times larger or 1/X times smaller than the current one to trigger a new factorization. 
+\begin{DoxyParams}{Parameters}
+{\em adaptive\+Rho\+Tolerance} & is the tolerance. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Alpha@{set\+Alpha}}
+\index{set\+Alpha@{set\+Alpha}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Alpha(const double alpha)}{setAlpha(const double alpha)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Alpha (
+\begin{DoxyParamCaption}
+\item[{const double}]{alpha}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a47cb482b8cdf4434d36f3958da65d70b}
+
+
+Set the relaxation parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & is the relaxation parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Check\+Termination@{set\+Check\+Termination}}
+\index{set\+Check\+Termination@{set\+Check\+Termination}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Check\+Termination(const int check\+Termination)}{setCheckTermination(const int checkTermination)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Check\+Termination (
+\begin{DoxyParamCaption}
+\item[{const int}]{check\+Termination}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_ae227a4107d7475116ce236fa08b99aca}
+
+
+Set check termination interval. 
+
+If 0, termination checking is disabled. 
+\begin{DoxyParams}{Parameters}
+{\em check\+Termination} & if 0 the termination checking is disabled. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Delta@{set\+Delta}}
+\index{set\+Delta@{set\+Delta}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Delta(const double delta)}{setDelta(const double delta)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Delta (
+\begin{DoxyParamCaption}
+\item[{const double}]{delta}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_addda3f07a042e3f472195d5f7198cf9c}
+
+
+Set the relaxation parameter for polish. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & is the relaxation parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Dual\+Infeasibility\+Tollerance@{set\+Dual\+Infeasibility\+Tollerance}}
+\index{set\+Dual\+Infeasibility\+Tollerance@{set\+Dual\+Infeasibility\+Tollerance}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Dual\+Infeasibility\+Tollerance(const double dual\+Infeasibility\+Tollerance)}{setDualInfeasibilityTollerance(const double dualInfeasibilityTollerance)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Dual\+Infeasibility\+Tollerance (
+\begin{DoxyParamCaption}
+\item[{const double}]{dual\+Infeasibility\+Tollerance}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a943057aa80b523623ae6a38c50bbe7e5}
+
+
+Set the dual infeasibility tolerance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dual\+Infeasibility\+Tollerance} & tolerace of the dual variables. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Max\+Iteraction@{set\+Max\+Iteraction}}
+\index{set\+Max\+Iteraction@{set\+Max\+Iteraction}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Max\+Iteraction(const int max\+Iteration)}{setMaxIteraction(const int maxIteration)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Max\+Iteraction (
+\begin{DoxyParamCaption}
+\item[{const int}]{max\+Iteration}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a0cc53fc78b45b6608f88e277c6564b65}
+
+
+Set the max number of iterations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Iteration} & max number of iteration \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Polish@{set\+Polish}}
+\index{set\+Polish@{set\+Polish}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Polish(const bool polish)}{setPolish(const bool polish)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Polish (
+\begin{DoxyParamCaption}
+\item[{const bool}]{polish}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a779bf46ff9b22070b12e4a1f07fee6c8}
+
+
+Set if the polish feature is active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em polish} & if True the feature is active. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Polish\+Refine\+Iter@{set\+Polish\+Refine\+Iter}}
+\index{set\+Polish\+Refine\+Iter@{set\+Polish\+Refine\+Iter}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Polish\+Refine\+Iter(const int polish\+Refine\+Iter)}{setPolishRefineIter(const int polishRefineIter)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Polish\+Refine\+Iter (
+\begin{DoxyParamCaption}
+\item[{const int}]{polish\+Refine\+Iter}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a563ceb07445f6708a9ae2c2db20c41c4}
+
+
+Set the iterative refinement steps in polish. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em polish\+Refine\+Iter} & iterative refinement step. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 102 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Primal\+Infeasibility\+Tollerance@{set\+Primal\+Infeasibility\+Tollerance}}
+\index{set\+Primal\+Infeasibility\+Tollerance@{set\+Primal\+Infeasibility\+Tollerance}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Primal\+Infeasibility\+Tollerance(const double primal\+Infeasibility\+Tollerance)}{setPrimalInfeasibilityTollerance(const double primalInfeasibilityTollerance)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Primal\+Infeasibility\+Tollerance (
+\begin{DoxyParamCaption}
+\item[{const double}]{primal\+Infeasibility\+Tollerance}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a687099f54953ad7e52e56e5958cc437d}
+
+
+Set the primal infeasibility tolerance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em primal\+Infeasibility\+Tollerance} & tolerace of the primal variables. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Relative\+Tolerance@{set\+Relative\+Tolerance}}
+\index{set\+Relative\+Tolerance@{set\+Relative\+Tolerance}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Relative\+Tolerance(const double relative\+Tolerance)}{setRelativeTolerance(const double relativeTolerance)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Relative\+Tolerance (
+\begin{DoxyParamCaption}
+\item[{const double}]{relative\+Tolerance}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a285d31d375d498ab27e6888997e42b88}
+
+
+Set the relative convergence tolerance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em relative\+Tolerance} & relative tolerance of the solver. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Rho@{set\+Rho}}
+\index{set\+Rho@{set\+Rho}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Rho(const double rho)}{setRho(const double rho)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Rho (
+\begin{DoxyParamCaption}
+\item[{const double}]{rho}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_acf6b69c1ea0033a2e34ddc919224d875}
+
+
+Set the A\+D\+MM step rho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rho} & a A\+D\+MM step constant. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Scaled\+Terimination@{set\+Scaled\+Terimination}}
+\index{set\+Scaled\+Terimination@{set\+Scaled\+Terimination}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Scaled\+Terimination(const bool scaled\+Termination)}{setScaledTerimination(const bool scaledTermination)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Scaled\+Terimination (
+\begin{DoxyParamCaption}
+\item[{const bool}]{scaled\+Termination}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_ab34796bbbdbd5a6ecb29517389156914}
+
+
+Set the scaled termination criteria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scaled\+Termination} & if true the scaled termination criteria is used. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Scaling@{set\+Scaling}}
+\index{set\+Scaling@{set\+Scaling}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Scaling(const int scaling)}{setScaling(const int scaling)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Scaling (
+\begin{DoxyParamCaption}
+\item[{const int}]{scaling}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a44817e949ec8cd19050560240783ab8c}
+
+
+Set the heuristic data scaling iterations. 
+
+If 0, scaling disabled. 
+\begin{DoxyParams}{Parameters}
+{\em scaling} & is the heuristic data scaling iteration. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Sigma@{set\+Sigma}}
+\index{set\+Sigma@{set\+Sigma}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Sigma(const double sigma)}{setSigma(const double sigma)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Sigma (
+\begin{DoxyParamCaption}
+\item[{const double}]{sigma}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_abd3ee47898bda12e35cfd86deea63559}
+
+
+Set the A\+D\+MM step sigma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sigma} & a A\+D\+MM step constant. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Verbosity@{set\+Verbosity}}
+\index{set\+Verbosity@{set\+Verbosity}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Verbosity(const bool is\+Verbose)}{setVerbosity(const bool isVerbose)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Verbosity (
+\begin{DoxyParamCaption}
+\item[{const bool}]{is\+Verbose}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_ad063e2a491c3506ea3023a3734ad2d45}
+
+
+Set the Verbose mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Verbose} & if true the verbose mode is activate. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file Optimizer\+Settings.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}!set\+Warm\+Start@{set\+Warm\+Start}}
+\index{set\+Warm\+Start@{set\+Warm\+Start}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings}}
+\subsubsection[{\texorpdfstring{set\+Warm\+Start(const bool warm\+Start)}{setWarmStart(const bool warmStart)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Settings\+::set\+Warm\+Start (
+\begin{DoxyParamCaption}
+\item[{const bool}]{warm\+Start}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerSettings_a3c9d45eb961e366d8012e467f3b81de4}
+
+
+Set warm start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em warm\+Start} & if true the warm start is set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Optimizer\+Settings.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{OptimizerSettings_8hpp}{Optimizer\+Settings.\+hpp}\item 
+\hyperlink{OptimizerSettings_8cpp}{Optimizer\+Settings.\+cpp}\end{DoxyCompactItemize}

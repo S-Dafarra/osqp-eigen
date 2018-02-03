@@ -1,0 +1,300 @@
+\section{O\+S\+Q\+P\+Wrapper\+:\+:Optimizer\+Data Class Reference}
+\label{classOSQPWrapper_1_1OptimizerData}\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+
+
+\hyperlink{classOSQPWrapper_1_1OptimizerData}{Optimizer\+Data} class is a wrapper of the O\+S\+QP O\+S\+Q\+P\+Data struct.  
+
+
+
+
+{\ttfamily \#include $<$Optimizer\+Data.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerData_aa41cc99a744074ac439f34467ca927a5}{Optimizer\+Data} ()\label{classOSQPWrapper_1_1OptimizerData_aa41cc99a744074ac439f34467ca927a5}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerData_a6daaeae8e8980f08d45b55fb07f1145a}{Optimizer\+Data} (int n, int m)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classOSQPWrapper_1_1OptimizerData_a436b65c4d7f50d233c4dd1cd1a83cae6}{$\sim$\+Optimizer\+Data} ()\label{classOSQPWrapper_1_1OptimizerData_a436b65c4d7f50d233c4dd1cd1a83cae6}
+
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerData_aedc85562389cd5061f52db0449d200c8}{clear\+Hessian\+Matrix} ()\label{classOSQPWrapper_1_1OptimizerData_aedc85562389cd5061f52db0449d200c8}
+
+\begin{DoxyCompactList}\small\item\em Clear the hessian matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerData_aa80be22f78bc9f3442c7405ec0080170}{clear\+Linear\+Constraints\+Matrix} ()\label{classOSQPWrapper_1_1OptimizerData_aa80be22f78bc9f3442c7405ec0080170}
+
+\begin{DoxyCompactList}\small\item\em Clear the linear constraints matrix. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerData_a5da83359faaeac29332152aa83cc5ad3}{set\+Number\+Of\+Variables} (int n)
+\begin{DoxyCompactList}\small\item\em Set the number of variables. \end{DoxyCompactList}\item 
+void \hyperlink{classOSQPWrapper_1_1OptimizerData_ab0c21f364d2171c6d0cf3177b3193128}{set\+Number\+Of\+Constraints} (int m)
+\begin{DoxyCompactList}\small\item\em Set the number of constraints. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerData_aa6914d351eb335de65481ff49e48b3aa}{set\+Hessian\+Matrix} (const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&hessian\+Matrix)
+\begin{DoxyCompactList}\small\item\em Set the quadratic part of the cost function (Hessian). \end{DoxyCompactList}\item 
+{\footnotesize template$<$int n$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerData_a36ed84071fa58564b998b7db2efc5d5c}{set\+Gradient} (Eigen\+::\+Matrix$<$ c\+\_\+float, n, 1 $>$ \&gradient\+Vector)
+\begin{DoxyCompactList}\small\item\em Set the linear part of the cost function (Gradient). \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerData_acba80bfc485a72bfe423a39ab5895c19}{set\+Linear\+Constraints\+Matrix} (const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&linear\+Constraints\+Matrix)
+\begin{DoxyCompactList}\small\item\em Set the linear constraint matrix A (size m x n) \end{DoxyCompactList}\item 
+{\footnotesize template$<$int m$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerData_adeae6b9d09828d618daae146217ad0ef}{set\+Lower\+Bound} (Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&lower\+Bound\+Vector)
+\begin{DoxyCompactList}\small\item\em Set the array for lower bound (size m). \end{DoxyCompactList}\item 
+{\footnotesize template$<$int m$>$ }\\bool \hyperlink{classOSQPWrapper_1_1OptimizerData_a7c9b1f0a11f424f81c3ad80a4337267d}{set\+Upper\+Bound} (Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&upper\+Bound\+Vector)
+\begin{DoxyCompactList}\small\item\em Set the array for upper bound (size m). \end{DoxyCompactList}\item 
+O\+S\+Q\+P\+Data $\ast$const \& \hyperlink{classOSQPWrapper_1_1OptimizerData_a8210bda64ae24e89ac0857cc893032dc}{get\+Optimizer\+Data} () const 
+\begin{DoxyCompactList}\small\item\em Get the O\+S\+Q\+P\+Data struct. \end{DoxyCompactList}\item 
+bool \hyperlink{classOSQPWrapper_1_1OptimizerData_ac3def0227cdb687a9b3900b52c259578}{is\+Set} () const 
+\begin{DoxyCompactList}\small\item\em Verify if all the matrix and vectors are already set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classOSQPWrapper_1_1OptimizerData}{Optimizer\+Data} class is a wrapper of the O\+S\+QP O\+S\+Q\+P\+Data struct. 
+
+Definition at line 28 of file Optimizer\+Data.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!Optimizer\+Data@{Optimizer\+Data}}
+\index{Optimizer\+Data@{Optimizer\+Data}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{Optimizer\+Data(int n, int m)}{OptimizerData(int n, int m)}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::\+Optimizer\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_a6daaeae8e8980f08d45b55fb07f1145a}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is the number of variables; \\
+\hline
+{\em m} & is the number of constraints. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Optimizer\+Data.\+cpp.
+
+
+
+References set\+Number\+Of\+Constraints(), and set\+Number\+Of\+Variables().
+
+
+
+\subsection{Member Function Documentation}
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!get\+Optimizer\+Data@{get\+Optimizer\+Data}}
+\index{get\+Optimizer\+Data@{get\+Optimizer\+Data}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{get\+Optimizer\+Data() const }{getOptimizerData() const }}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+Q\+P\+Data $\ast$const \& O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::get\+Optimizer\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classOSQPWrapper_1_1OptimizerData_a8210bda64ae24e89ac0857cc893032dc}
+
+
+Get the O\+S\+Q\+P\+Data struct. 
+
+\begin{DoxyReturn}{Returns}
+a const point to the O\+S\+Q\+P\+Data struct. 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Optimizer\+Data.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!is\+Set@{is\+Set}}
+\index{is\+Set@{is\+Set}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{is\+Set() const }{isSet() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::is\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classOSQPWrapper_1_1OptimizerData_ac3def0227cdb687a9b3900b52c259578}
+
+
+Verify if all the matrix and vectors are already set. 
+
+\begin{DoxyReturn}{Returns}
+true if all the O\+S\+Q\+P\+Data struct are set. 
+\end{DoxyReturn}
+
+
+Definition at line 87 of file Optimizer\+Data.\+cpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Gradient@{set\+Gradient}}
+\index{set\+Gradient@{set\+Gradient}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Gradient(\+Eigen\+::\+Matrix$<$ c\+\_\+float, n, 1 $>$ \&gradient\+Vector)}{setGradient(Eigen::Matrix< c_float, n, 1 > &gradientVector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int n$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Gradient (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, n, 1 $>$ \&}]{gradient\+Vector}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_a36ed84071fa58564b998b7db2efc5d5c}
+
+
+Set the linear part of the cost function (Gradient). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gradient\+Vector} & is the Gradient vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Optimizer\+Data.\+tpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Hessian\+Matrix@{set\+Hessian\+Matrix}}
+\index{set\+Hessian\+Matrix@{set\+Hessian\+Matrix}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Hessian\+Matrix(const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&hessian\+Matrix)}{setHessianMatrix(const Eigen::SparseMatrix< T > &hessianMatrix)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Hessian\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&}]{hessian\+Matrix}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_aa6914d351eb335de65481ff49e48b3aa}
+
+
+Set the quadratic part of the cost function (Hessian). 
+
+It is assumed to be a simmetric matrix. 
+\begin{DoxyParams}{Parameters}
+{\em hessian\+Matrix} & is the Hessian matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Optimizer\+Data.\+tpp.
+
+
+
+References O\+S\+Q\+P\+Wrapper\+::\+Sparse\+Matrix\+Helper\+::create\+Osqp\+Sparse\+Matrix().
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Linear\+Constraints\+Matrix@{set\+Linear\+Constraints\+Matrix}}
+\index{set\+Linear\+Constraints\+Matrix@{set\+Linear\+Constraints\+Matrix}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Linear\+Constraints\+Matrix(const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&linear\+Constraints\+Matrix)}{setLinearConstraintsMatrix(const Eigen::SparseMatrix< T > &linearConstraintsMatrix)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Linear\+Constraints\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const Eigen\+::\+Sparse\+Matrix$<$ T $>$ \&}]{linear\+Constraints\+Matrix}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_acba80bfc485a72bfe423a39ab5895c19}
+
+
+Set the linear constraint matrix A (size m x n) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+Constraints\+Matrix} & is the linear constraints matrix A. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Optimizer\+Data.\+tpp.
+
+
+
+References O\+S\+Q\+P\+Wrapper\+::\+Sparse\+Matrix\+Helper\+::create\+Osqp\+Sparse\+Matrix().
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Lower\+Bound@{set\+Lower\+Bound}}
+\index{set\+Lower\+Bound@{set\+Lower\+Bound}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Lower\+Bound(\+Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&lower\+Bound\+Vector)}{setLowerBound(Eigen::Matrix< c_float, m, 1 > &lowerBoundVector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int m$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Lower\+Bound (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&}]{lower\+Bound\+Vector}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_adeae6b9d09828d618daae146217ad0ef}
+
+
+Set the array for lower bound (size m). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\+Bound\+Vector} & is the lower bound constraint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Optimizer\+Data.\+tpp.
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Number\+Of\+Constraints@{set\+Number\+Of\+Constraints}}
+\index{set\+Number\+Of\+Constraints@{set\+Number\+Of\+Constraints}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Number\+Of\+Constraints(int m)}{setNumberOfConstraints(int m)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Number\+Of\+Constraints (
+\begin{DoxyParamCaption}
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_ab0c21f364d2171c6d0cf3177b3193128}
+
+
+Set the number of constraints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & is the number of constraints. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file Optimizer\+Data.\+cpp.
+
+
+
+Referenced by Optimizer\+Data().
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Number\+Of\+Variables@{set\+Number\+Of\+Variables}}
+\index{set\+Number\+Of\+Variables@{set\+Number\+Of\+Variables}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Number\+Of\+Variables(int n)}{setNumberOfVariables(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Number\+Of\+Variables (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_a5da83359faaeac29332152aa83cc5ad3}
+
+
+Set the number of variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & is the number of variables. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Optimizer\+Data.\+cpp.
+
+
+
+Referenced by Optimizer\+Data().
+
+\index{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}!set\+Upper\+Bound@{set\+Upper\+Bound}}
+\index{set\+Upper\+Bound@{set\+Upper\+Bound}!O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data@{O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data}}
+\subsubsection[{\texorpdfstring{set\+Upper\+Bound(\+Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&upper\+Bound\+Vector)}{setUpperBound(Eigen::Matrix< c_float, m, 1 > &upperBoundVector)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int m$>$ bool O\+S\+Q\+P\+Wrapper\+::\+Optimizer\+Data\+::set\+Upper\+Bound (
+\begin{DoxyParamCaption}
+\item[{Eigen\+::\+Matrix$<$ c\+\_\+float, m, 1 $>$ \&}]{upper\+Bound\+Vector}
+\end{DoxyParamCaption}
+)}\label{classOSQPWrapper_1_1OptimizerData_a7c9b1f0a11f424f81c3ad80a4337267d}
+
+
+Set the array for upper bound (size m). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upper\+Bound\+Vector} & is the upper bound constraint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false in case of success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Optimizer\+Data.\+tpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{OptimizerData_8hpp}{Optimizer\+Data.\+hpp}\item 
+\hyperlink{OptimizerData_8cpp}{Optimizer\+Data.\+cpp}\item 
+\hyperlink{OptimizerData_8tpp}{Optimizer\+Data.\+tpp}\end{DoxyCompactItemize}
